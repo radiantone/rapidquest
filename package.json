@@ -1,7 +1,7 @@
 {
   "name": "rapidquest",
   "version": "0.0.1",
-  "description": "A typescript client SDK for the RapidQuest narration development system.",
+  "description": "A typescript client API for the RapidQuest narration development system.",
   "scripts": {
     "test": "ts-node src/test/test.ts",
     "build": "tsc --build",
@@ -36,6 +36,7 @@
   "homepage": "https://github.com/radiantone/rapidquest#readme",
   "dependencies": {
     "eslint": "^7.17.0",
-    "i": "^0.3.6"
+    "i": "^0.3.6",
+    "inferencegraph": "^0.1.0"
   }
 }
