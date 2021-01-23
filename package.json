@@ -1,14 +1,13 @@
 {
   "name": "rapidquest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A typescript client API for the RapidQuest narration development system.",
   "scripts": {
     "clean": "rm -rf lib;tsc --build --clean",
     "lint": "eslint . --ext .ts",
     "build": "tsc --build",
     "test": "ts-node src/test/test.ts",
-    "all": "npm run clean && npm run build && npm run lint && npm run test",
-    "publish": "npm publish --access public"
+    "all": "npm run clean && npm run build && npm run lint && npm run test"
   },
   "types": "lib/rapidquest/api.d.ts",
   "main": "lib/rapidquest/api.js",
