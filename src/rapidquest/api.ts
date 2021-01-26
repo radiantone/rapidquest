@@ -14,6 +14,16 @@ export class Player extends Object {
 
 }
 
+export class Class extends Object {
+
+
+}
+
+export class Race extends Object {
+
+
+}
+
 export class Location extends Object {
 
 
@@ -79,7 +89,7 @@ export class Note extends Object {
 
 }
 
-export class Sppech extends Object {
+export class Speech extends Object {
 
 
 }
@@ -90,6 +100,11 @@ export class Decision extends Object {
 }
 
 export class Journal extends Object {
+
+
+}
+
+export class Input extends Object {
 
 
 }
