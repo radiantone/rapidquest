@@ -1,4 +1,6 @@
 import axios from 'axios'
+import { Graph, Fact, Factoid, Callbacks, KnowledgeBase, KnowledgeGraph, Brain, Rule } from 'inferencegraph'
+
 
 export class RapidQuest extends Object {
 
@@ -23,8 +25,12 @@ export class RapidQuest extends Object {
             })
 
             console.log(res.status)
-            console.log(res)
-            return new Quest(res.data);
+            if (res.status === 200) {
+                console.log(res)
+                return new Quest(res.data);
+            } else {
+                throw Error(res.data)
+            }
         } catch (err) {
             return err
         }
@@ -34,6 +40,8 @@ export class RapidQuest extends Object {
 export class Quest extends Object {
 
     private _quest : unknown;
+    public isAxiosError : boolean;
+    public stack : string;
 
     constructor(quest: string) {
         super();
@@ -101,7 +109,8 @@ export class Property extends Object {
 
 }
 
-export class Fact extends Object {
+
+class ObjectFact extends Object {
 
 
 }

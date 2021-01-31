@@ -40,6 +40,6 @@
     "axios": "^0.21.1",
     "eslint": "^7.17.0",
     "i": "^0.3.6",
-    "inferencegraph": "^0.1.0"
+    "inferencegraph": "^0.1.2"
   }
 }
