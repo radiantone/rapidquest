@@ -45,7 +45,6 @@ export class Quest extends Object {
 
     constructor(quest: string) {
         super();
-        console.log('quest data: ', quest)
         this._quest = quest
     }
 

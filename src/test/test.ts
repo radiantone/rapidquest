@@ -1,4 +1,5 @@
 import { RapidQuest, Quest } from '../rapidquest/client'
+import { Graph, Fact, Factoid, Callbacks, KnowledgeBase, KnowledgeGraph, Brain, Rule } from 'inferencegraph'
 
 const rapidquest : RapidQuest = new RapidQuest('http://localhost:8000','41c1ef3ff18edc7ed831ac32f7d6cd42', '941a6944-935b-4c46-a52f-8de9e096ccb3');
 
