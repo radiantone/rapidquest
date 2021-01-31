@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/radiantone/rapidquest#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "eslint": "^7.17.0",
     "i": "^0.3.6",
     "inferencegraph": "^0.1.0"

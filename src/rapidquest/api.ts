@@ -1,12 +1,49 @@
+import axios from 'axios'
 
 export class RapidQuest extends Object {
 
+    private _apikey : string;
+    private _userid : string;
+    private _serverurl : string;
 
+    constructor(server: string, userid: string, apikey: string) {
+        super();
+        this._apikey = apikey
+        this._userid = userid
+        this._serverurl = server
+    }
+
+    public async getQuest(questid: string):Promise<Quest> {
+        try {
+            const res = await axios.get(this._serverurl + '/client/quest/' + questid, {
+                headers: {
+                    apikey: this._apikey,
+                    userid: this._userid
+                }
+            })
+
+            console.log(res.status)
+            console.log(res)
+            return new Quest(res.data);
+        } catch (err) {
+            return err
+        }
+    }
 }
 
 export class Quest extends Object {
 
+    private _quest : unknown;
 
+    constructor(quest: string) {
+        super();
+        console.log('quest data: ', quest)
+        this._quest = quest
+    }
+
+    public getData(): unknown {
+        return this._quest;
+    }
 }
 
 export class Player extends Object {
@@ -108,3 +145,4 @@ export class Input extends Object {
 
 
 }
+
