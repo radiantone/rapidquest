@@ -1,6 +1,6 @@
 {
   "name": "rapidquest",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A typescript client API for the RapidQuest narration development system.",
   "scripts": {
     "clean": "rm -rf lib;tsc --build --clean",
