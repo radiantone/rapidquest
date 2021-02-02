@@ -51,6 +51,24 @@ export class Quest extends Object {
     public getData(): unknown {
         return this._quest;
     }
+
+    /**
+     * Does the entry/exit point of playing a quest occur through this object?
+     */
+}
+
+/**
+ * Manages state for server side quest playing
+ */
+export class QuestSession extends Object {
+
+}
+
+/**
+ * Stores all the input/outputs passed to a Quest object to play the quest
+ */
+export class QuestContext extends Object {
+
 }
 
 export class Player extends Object {
@@ -104,12 +122,6 @@ export class Skill extends Object {
 }
 
 export class Property extends Object {
-
-
-}
-
-
-class ObjectFact extends Object {
 
 
 }
