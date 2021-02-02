@@ -1,6 +1,6 @@
 {
   "name": "rapidquest",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A typescript client API for the RapidQuest narration development system.",
   "scripts": {
     "clean": "rm -rf lib;tsc --build --clean",
@@ -10,8 +10,8 @@
     "all": "npm run clean && npm run build && npm run lint && npm run test",
     "pub": "npm publish --access public"
   },
-  "types": "lib/rapidquest/api.d.ts",
-  "main": "lib/rapidquest/api.js",
+  "types": "lib/rapidquest/client.d.ts",
+  "main": "lib/rapidquest/client.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/radiantone/rapidquest.git"
@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
     "commonjs": "0.0.1",
+    "nearley": "^2.20.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
